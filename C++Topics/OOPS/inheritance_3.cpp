@@ -1,6 +1,8 @@
 #include <iostream>
 using namespace std;
 
+// If you define yourself the constructor you must call all required base class constructors
+// explicitly.
 class Base1 {
 public:
     Base1(int x) { std::cout << "Base1: " << x << "\n"; }
