@@ -14,7 +14,7 @@ struct TrieNode {
 };
 /*
 Two ways to do this
-1. Store all words in a trie by backtracking in the grid. (Too slow as to many possibilities).
+1. Store all words in a trie by backtracking in the grid. (Too slow as to many possibilities) and then search each query words in the trie.
 2. Store all the search words in a trie and then do dfs from each cell and if the cell or
    its corresponding next cell donot match with any entry in trie prune that branch and save time
    which gets wasted if you check all possibilities in that invalid branch(case 1).
